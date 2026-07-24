@@ -1874,12 +1874,16 @@ button {
 }
 
 @media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
   html {
     scroll-padding-top: 74px;
   }
 
   .section {
-    padding: 76px 0;
+    padding: 64px 0;
   }
 
   .section-heading {
@@ -1890,8 +1894,29 @@ button {
     font-size: 0.96rem;
   }
 
+  .eyebrow {
+    gap: 9px;
+    margin-bottom: 14px;
+    font-size: 0.64rem;
+    letter-spacing: 0.15em;
+  }
+
+  .eyebrow::before {
+    width: 24px;
+  }
+
+  .section-heading h2,
+  .about h2,
+  .faq h2,
+  .sell h2,
+  .final-cta h2 {
+    font-size: clamp(2.35rem, 11vw, 3.3rem);
+    line-height: 1.08;
+  }
+
   .hero {
-    min-height: max(700px, 100svh);
+    min-height: max(660px, 100svh);
+    align-items: end;
   }
 
   .hero__media img {
@@ -1903,16 +1928,19 @@ button {
   }
 
   .hero h1 {
-    font-size: clamp(3.3rem, 17vw, 5rem);
+    font-size: clamp(3rem, 15vw, 4.25rem);
+    line-height: 0.98;
   }
 
   .hero__lead {
+    margin-top: 22px;
     max-width: 34rem;
     font-size: 0.96rem;
     line-height: 1.65;
   }
 
   .hero__actions {
+    margin-top: 28px;
     align-items: stretch;
     flex-direction: column;
   }
@@ -1931,7 +1959,7 @@ button {
   }
 
   .about__image {
-    height: 500px;
+    height: min(112vw, 440px);
     border-radius: var(--radius-md);
   }
 
@@ -1961,7 +1989,7 @@ button {
 
   .region-card,
   .region-card--large {
-    min-height: 320px;
+    min-height: 280px;
   }
 
   .region-card__content {
@@ -1999,7 +2027,7 @@ button {
   }
 
   .property-card__media {
-    height: 230px;
+    height: min(62vw, 250px);
   }
 
   .property-card__body {
@@ -2016,16 +2044,19 @@ button {
 
   .service-card,
   .service-card:nth-child(4) {
-    min-height: 300px;
+    min-height: 272px;
     grid-column: auto;
   }
 
   .service-card__icon {
-    margin-bottom: 55px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 38px;
   }
 
   .sell {
-    min-height: 820px;
+    min-height: 680px;
+    padding: 72px 0;
   }
 
   .sell__overlay {
@@ -2043,7 +2074,7 @@ button {
 
   .testimonial-card {
     min-width: 100%;
-    padding: 30px;
+    padding: 26px;
   }
 
   .testimonial-card blockquote {
@@ -2051,11 +2082,12 @@ button {
   }
 
   .accordion__item button {
-    font-size: 1.08rem;
+    padding: 22px 0;
+    font-size: 1.02rem;
   }
 
   .final-cta {
-    padding: 110px 0;
+    padding: 82px 0;
   }
 
   .button--large {
@@ -2081,6 +2113,20 @@ button {
     height: 58px;
     justify-content: center;
     padding: 0;
+  }
+
+  .footer {
+    padding-top: 64px;
+  }
+
+  .footer__map {
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .footer__bottom {
+    gap: 16px;
+    margin-top: 32px;
   }
 
 }

@@ -75,7 +75,9 @@ function updateParallax() {
   parallaxFrame = null;
 }
 
-if (!reduceMotion) {
+const enableParallax = !reduceMotion && window.matchMedia("(min-width: 821px)").matches;
+
+if (enableParallax) {
   window.addEventListener(
     "scroll",
     () => {
