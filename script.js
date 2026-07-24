@@ -112,7 +112,7 @@ document.querySelectorAll(".favorite").forEach((button) => {
 document.querySelectorAll(".js-property-contact").forEach((link) => {
   const property = link.dataset.property;
   const message = `Olá, Sandra! Vi o anúncio “${property}” no site e gostaria de mais informações.`;
-  link.href = `https://wa.me/5571999999999?text=${encodeURIComponent(message)}`;
+  link.href = `https://wa.me/5571972222604?text=${encodeURIComponent(message)}`;
 });
 
 const accordionButtons = document.querySelectorAll(".accordion__item button");
